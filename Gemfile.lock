@@ -1,4 +1,5 @@
 GEM
+<<<<<<< HEAD
   remote: https://rubygems.org/
   specs:
     actionmailer (3.2.8)
@@ -98,14 +99,34 @@ GEM
     uglifier (1.3.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
+=======
+  remote: http://rubygems.org/
+  specs:
+    daemons (1.1.8)
+    eventmachine (0.12.10)
+    rack (1.4.1)
+    sinatra (1.1.0)
+      rack (~> 1.1)
+      tilt (~> 1.1)
+    thin (1.2.7)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
+    tilt (1.3.3)
+>>>>>>> 899e3779ce0689c20476dd6665fefb60a6259934
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+<<<<<<< HEAD
   coffee-rails (~> 3.2.1)
   jquery-rails
   rails (= 3.2.8)
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)
+=======
+  sinatra (= 1.1.0)
+  thin (= 1.2.7)
+>>>>>>> 899e3779ce0689c20476dd6665fefb60a6259934
