@@ -1,0 +1,6 @@
+<%= fields.fields_for :progress_item_delegate do |progress_item_delegate| %>
+  <div class="field">
+    <%= progress_item_delegate.label :status %><br />
+    <%= progress_item_delegate.text_field :status %>
+  </div>
+<% end %>

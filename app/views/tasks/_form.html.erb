@@ -15,18 +15,9 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
-  <div class="field">
-    <%= f.label :project_id %><br />
-    <%= f.number_field :project_id %>
-  </div>
-  <div class="field">
-    <%= f.label :assignee_id %><br />
-    <%= f.number_field :assignee_id %>
-  </div>
-  <div class="field">
-    <%= f.label :assigner_id %><br />
-    <%= f.number_field :assigner_id %>
-  </div>
+
+  <%= progress_item_delegate_fields f %> 
+  
   <div class="field">
     <%= f.label :due_date %><br />
     <%= f.date_select :due_date %>
@@ -34,10 +25,6 @@
   <div class="field">
     <%= f.label :start_date %><br />
     <%= f.date_select :start_date %>
-  </div>
-  <div class="field">
-    <%= f.label :status %><br />
-    <%= f.text_field :status %>
   </div>
   <div class="actions">
     <%= f.submit %>

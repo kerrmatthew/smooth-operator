@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130128105934) do
+ActiveRecord::Schema.define(:version => 20130128201158) do
+
+  create_table "progress_item_delegates", :force => true do |t|
+    t.integer  "progress_item_id"
+    t.string   "progress_item_type"
+    t.string   "status"
+    t.boolean  "active"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
 
   create_table "project_memberships", :force => true do |t|
     t.integer  "user_id"
@@ -25,7 +34,6 @@ ActiveRecord::Schema.define(:version => 20130128105934) do
     t.integer  "owner_id"
     t.date     "due_date"
     t.date     "start_date"
-    t.string   "status"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -37,9 +45,9 @@ ActiveRecord::Schema.define(:version => 20130128105934) do
     t.integer  "assigner_id"
     t.date     "due_date"
     t.date     "start_date"
-    t.string   "status"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.integer  "progress_item_delegate_id"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
   end
 
   create_table "users", :force => true do |t|
