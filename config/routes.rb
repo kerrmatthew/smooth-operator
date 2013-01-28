@@ -1,7 +1,13 @@
 SmoothOperator::Application.routes.draw do
+
+
   resources :tasks
 
 
+  resources :projects
+
+
+  resources :tasks
   devise_for :users
 
   # The priority is based upon order of creation:

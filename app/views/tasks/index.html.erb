@@ -2,6 +2,13 @@
 
 <table>
   <tr>
+    <th>Name</th>
+    <th>Project</th>
+    <th>Assignee</th>
+    <th>Assigner</th>
+    <th>Due date</th>
+    <th>Start date</th>
+    <th>Status</th>
     <th></th>
     <th></th>
     <th></th>
@@ -9,6 +16,13 @@
 
 <% @tasks.each do |task| %>
   <tr>
+    <td><%= task.name %></td>
+    <td><%= task.project_id %></td>
+    <td><%= task.assignee_id %></td>
+    <td><%= task.assigner_id %></td>
+    <td><%= task.due_date %></td>
+    <td><%= task.start_date %></td>
+    <td><%= task.status %></td>
     <td><%= link_to 'Show', task %></td>
     <td><%= link_to 'Edit', edit_task_path(task) %></td>
     <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
