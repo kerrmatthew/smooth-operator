@@ -3,6 +3,7 @@ source :rubygems
 gem 'rails', '3.2.8'
 
 gem 'pg', group: :production
+gem 'thin', group: :production
 
 gem 'paperclip'
 
