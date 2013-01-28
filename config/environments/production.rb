@@ -20,7 +20,10 @@ SmoothOperator::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
-  # Defaults to nil and saved in location specified by config.assets.prefix
+  config.action_mailer.default_url_options = { :host => 'http://smooth-operator.herokuapp.com' }
+ 
+  # Defaults to nil and saved in location specified by config.assets.prefi
+  
   # config.assets.manifest = YOUR_PATH
 
   # Specifies the header that your server uses for sending files

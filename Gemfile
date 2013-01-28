@@ -1,13 +1,13 @@
 source :rubygems
 
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.11'
 
 gem 'pg', group: :production
 gem 'thin', group: :production
 
 gem 'paperclip'
 
-# gem 'devise'
+gem 'devise'
 # gem 'devise_invitable'
 gem "cancan"
 
@@ -41,7 +41,7 @@ gem 'exception_notification', :group => :production
 gem 'acts_as_list'
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
