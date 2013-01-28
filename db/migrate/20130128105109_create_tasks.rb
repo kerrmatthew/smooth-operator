@@ -7,7 +7,7 @@ class CreateTasks < ActiveRecord::Migration
       t.integer :assigner_id
       t.date :due_date
       t.date :start_date
-      t.string :status
+      t.integer :progress_item_delegate_id
 
       t.timestamps
     end

@@ -1,5 +1,5 @@
 class Task < ActiveRecord::Base
-  attr_accessible :assignee_id, :assigner_id, :due_date, :name, :project_id, :start_date, :status
+  attr_accessible :due_date, :name, :start_date, :status
 
   belongs_to :project
   belongs_to :assignee, class_name: :user

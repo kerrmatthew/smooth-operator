@@ -5,7 +5,6 @@ class CreateProjects < ActiveRecord::Migration
       t.integer :owner_id
       t.date :due_date
       t.date :start_date
-      t.string :status
 
       t.timestamps
     end
