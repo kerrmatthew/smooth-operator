@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>Project:</b>
+  <%= @user.project_id %>
+</p>
+
+<p>
+  <b>Assignee:</b>
+  <%= @user.assignee_id %>
+</p>
+
+<p>
+  <b>Assigner:</b>
+  <%= @user.assigner_id %>
+</p>
+
+<p>
+  <b>Due date:</b>
+  <%= @user.due_date %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%= @user.start_date %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @user.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
