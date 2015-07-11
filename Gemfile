@@ -37,6 +37,7 @@ gem 'devise'
 gem 'devise_invitable', '~> 1.3.4'
 gem 'simple_token_authentication', '~> 1.0'
 
+gem 'httparty'
 
 # Use bootstrap with autoprefixer for browser specific css
 gem 'bootstrap-sass'
