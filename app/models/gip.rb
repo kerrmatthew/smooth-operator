@@ -23,7 +23,7 @@ GIP_LIST = %w{ ABY0111 ADD0111 ADD0661 ALB0331 ALB1101 APS0111 ARA2201 ARG1101 A
 
   def prices
     @prices ||= Hash.new do |prices, date| 
-      response = HTTParty.get "http://www.electricityinfo.co.nz/comitFta/five_min_prices.download?INchoice=SEL&INdate=#{date.strftime('%d')}/#{date.strftime('%m')}/#{date.year}&INgip=#{gip}&INperiodfrom=1&INperiodto=50&INtype=Average"
+      response = HTTParty.get "http://www.electricityinfo.co.nz/comitFta/five_min_prices.download?INchoice=SEL&INdate=#{date.strftime('%d/%m')}/#{date.year}&INgip=#{gip}&INperiodfrom=1&INperiodto=50&INtype=Average"
       csv = response.body.gsub(/\r/,"")
       fields = nil
       price_data = []
